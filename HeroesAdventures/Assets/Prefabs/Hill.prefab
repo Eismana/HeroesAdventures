@@ -681,9 +681,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1755743328040757398}
+  - component: {fileID: 4778814314969121906}
   m_Layer: 0
   m_Name: Hill
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -710,3 +711,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &4778814314969121906
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8773257496394816841}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.7915528, y: -0.6194444}
+  - {x: -0.7728536, y: 1.4143412}
+  - {x: 0.37914205, y: 1.4206293}
+  - {x: 1.4524052, y: 0.3344028}
+  - {x: 1.7642436, y: 0.027639866}
+  - {x: 1.8728808, y: -0.07688928}
+  - {x: 2.4237564, y: -0.6339743}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
