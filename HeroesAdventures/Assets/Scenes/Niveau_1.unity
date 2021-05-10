@@ -281,7 +281,7 @@ PrefabInstance:
     - target: {fileID: 1755743328040757398, guid: 8def3fb354ef7cc44a568feaf3802b1a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.24
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 1755743328040757398, guid: 8def3fb354ef7cc44a568feaf3802b1a,
         type: 3}
@@ -344,9 +344,10 @@ GameObject:
   - component: {fileID: 901812867}
   - component: {fileID: 901812872}
   - component: {fileID: 901812871}
+  - component: {fileID: 901812873}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: imgBackground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -428,8 +429,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 31.5, y: -11.5}
-  m_SizeDelta: {x: 300, y: 10}
+  m_AnchoredPosition: {x: 31.99, y: -19.61}
+  m_SizeDelta: {x: 300, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901812871
 MonoBehaviour:
@@ -444,7 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -469,6 +470,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901812866}
   m_CullTransparentMesh: 1
+--- !u!114 &901812873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901812866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4cdb6f979ee0743b6c3c52b4f908a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BackgroundImage: {fileID: 901812871}
+  _Delay: 1
 --- !u!1001 &1015853331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1130,7 +1145,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1280,7 +1295,12 @@ PrefabInstance:
     - target: {fileID: 1708085812957841004, guid: f437564b8dbcdb14b96e05f2a437779b,
         type: 3}
       propertyPath: m_Size.y
-      value: 5
+      value: 0.8626232
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708085812957841004, guid: f437564b8dbcdb14b96e05f2a437779b,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -2.0686884
       objectReference: {fileID: 0}
     - target: {fileID: 1708085812957841004, guid: f437564b8dbcdb14b96e05f2a437779b,
         type: 3}
@@ -1300,7 +1320,7 @@ PrefabInstance:
     - target: {fileID: 1708085812957841005, guid: f437564b8dbcdb14b96e05f2a437779b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.2
+      value: -23.04
       objectReference: {fileID: 0}
     - target: {fileID: 1708085812957841005, guid: f437564b8dbcdb14b96e05f2a437779b,
         type: 3}
@@ -1364,7 +1384,7 @@ PrefabInstance:
     - target: {fileID: 6036926340102991725, guid: c8ce5526715404e419bc8cf2d3dacf16,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.005339
+      value: 14.13
       objectReference: {fileID: 0}
     - target: {fileID: 6036926340102991725, guid: c8ce5526715404e419bc8cf2d3dacf16,
         type: 3}
