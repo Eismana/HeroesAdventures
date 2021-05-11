@@ -65,4 +65,22 @@ public class PlayerCtrl : MonoBehaviour
         anim.SetFloat("Movement", Mathf.Abs(move));
         anim.SetBool("IsJumping", isJunmping);
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "BonusItem")
+        {
+            Destroy(other.gameObject);
+            jumpSpeed += 150;
+            
+
+        }
+        else if(other.tag == "MalusItem")
+        {
+            Destroy(other.gameObject);
+            playerSpeed -= 2;
+            
+        }
+
+    }
+
 }
