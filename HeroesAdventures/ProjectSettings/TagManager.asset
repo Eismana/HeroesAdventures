@@ -9,6 +9,8 @@ TagManager:
   - imgBackground
   - BonusItem
   - MalusItem
+  - Gold
+  - Dammage
   layers:
   - Default
   - TransparentFX

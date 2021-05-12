@@ -14,10 +14,15 @@ using UnityEngine.SceneManagement;
         private void Start()
         {
             warning.enabled = false;
+
         }
-        
-        //La fonction Play() permet de rendre visble ou non le text de warning et d'accéder au premier niveau si l'utilisateur entre son nom
-        public void Play()
+        void Update()
+        {
+            PlayerPrefs.SetInt("LifeRecup", 3);
+            PlayerPrefs.SetInt("GoldRecup", 0);
+        }
+    //La fonction Play() permet de rendre visble ou non le text de warning et d'accéder au premier niveau si l'utilisateur entre son nom
+    public void Play()
         {
         if (name.text == "")
         {
@@ -25,8 +30,9 @@ using UnityEngine.SceneManagement;
         }
         else
             {
-                //Permet de sauvegarder le nom du jouer dans la cash pour l'afficher dans le niveau 1
-                PlayerPrefs.SetString("PlayerName", name.text);
+
+            //Permet de sauvegarder le nom du jouer dans la cash pour l'afficher dans le niveau 1
+            PlayerPrefs.SetString("PlayerName", name.text);
                 PlayerPrefs.Save();
                 //Accéder à la scène du nivau 1
                 SceneManager.LoadScene("Niveau_1");

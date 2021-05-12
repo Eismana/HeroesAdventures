@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyMove : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class EnemyMove : MonoBehaviour
 
     public float speed;
     public bool MoveRight;
-
+    int dammage;
     //Update est appellé à chaque rafraichissement 
     //Condition de faire bouger à une certaine vitesse donnée l'ennemie à gauche ou à droite
     void Update()
@@ -39,4 +40,5 @@ public class EnemyMove : MonoBehaviour
             }
         }
     }
+
 }
