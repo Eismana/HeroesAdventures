@@ -6,10 +6,16 @@ using UnityEngine.SceneManagement;
 public class EnemyMove : MonoBehaviour
 {
     //Déclarations variables
-
+    
     public float speed;
     public bool MoveRight;
     int dammage;
+    private AreaEffector2D bump;
+
+    void Start()
+    {
+        bump = GetComponent<AreaEffector2D>();
+    }
     //Update est appellé à chaque rafraichissement 
     //Condition de faire bouger à une certaine vitesse donnée l'ennemie à gauche ou à droite
     void Update()
@@ -32,10 +38,12 @@ public class EnemyMove : MonoBehaviour
         {
             if (MoveRight)
             {
+                bump.forceAngle = 120;
                 MoveRight = false;
             }
             else
             {
+                bump.forceAngle = 60;
                 MoveRight = true;    
             }
         }

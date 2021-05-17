@@ -15,7 +15,8 @@ public class PlayerCtrl : MonoBehaviour
     private Animator anim;
     public int gold = 0;
     public int life = 3;
-
+    private float delay = 0f;
+    private float delayItems = 0f;
     // Start est appelé au lancement du programme
     void Start()
     {
@@ -30,6 +31,8 @@ public class PlayerCtrl : MonoBehaviour
     // Update est appelé une fois par rafraichissment
     void Update()
     {
+        delay += Time.deltaTime;
+        delayItems += Time.deltaTime;
         PlayerPrefs.SetInt("GoldRecup", gold);
         PlayerPrefs.SetInt("LifeRecup", life);
         PlayerPrefs.Save();
@@ -82,6 +85,12 @@ public class PlayerCtrl : MonoBehaviour
         {
             Destroy(other.gameObject);
             jumpSpeed += 150;
+            if (delayItems>30f)
+            {
+                delayItems = 0f;
+                jumpSpeed -= 150;
+            }
+            
 
 
         }
@@ -104,22 +113,13 @@ public class PlayerCtrl : MonoBehaviour
 
 
         }
-        else if (other.tag == "Dammage")
+        if (other.tag == "Dammage" && delay>0.2f)
         {
-            if (life == 0)
-            {
-                SceneManager.LoadScene(5);
-            }
-            else
-            {
-
-                rb.AddForce(new Vector2(15 * playerSpeed, 10));
-                life--;
-
-            }
+            delay = 0f;
+            life--;
+            
 
         }
-
 
     }
 

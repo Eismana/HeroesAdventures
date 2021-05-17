@@ -10,21 +10,21 @@
   <Class Name="EnemyMove">
     <Position X="4.75" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAEAAAQAAQAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\Enemy_Move.cs</FileName>
+      <HashCode>BAQAAAAAAAAAAAAAAAAAAAAAAEAAAQAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyMove.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MainMenu">
     <Position X="13.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAgAAAAAAAAAAAAUAAAAgAAAAAAAAQA=</HashCode>
+      <HashCode>AAQAAAAAACAAAAgAAAAAAAAAAAAUAAAAgAAAAAAAAQA=</HashCode>
       <FileName>Assets\Scripts\MainMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlayerCtrl">
-    <Position X="10.75" Y="3" Width="1.5" />
+    <Position X="11.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAABAAiAAAQCEAAAAAAAAACAAAAAAASAgAAAAAAA=</HashCode>
+      <HashCode>AAUAAQBAAiAAAQCEAAAAAAAAAGAAAAAAASAgAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\PlayerCtrl.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -38,7 +38,7 @@
   <Class Name="RestartLevel">
     <Position X="7" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\RestartLevel.cs</FileName>
     </TypeIdentifier>
   </Class>

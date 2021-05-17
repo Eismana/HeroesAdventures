@@ -9,17 +9,20 @@ public class RestartLevel : MonoBehaviour
     //Fonction qui permet de vérifier si le héro avec le tag "Player" touche cette zone ce qui permet de revenir au début du niveau en rechargeant la scène en cas de chute
     void Update()
     {
-        
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+
+        if (other.tag == "Player" && PlayerPrefs.GetInt("LifeRecup", 0) == 0)
         {
-
-                SceneManager.LoadScene(SceneManager.GetSceneAt(0).name);
-
-            
+            SceneManager.LoadScene(5);
 
         }
+        else 
+        {
+            SceneManager.LoadScene(SceneManager.GetSceneAt(0).name);
+        }
+    
+
     }
 }
