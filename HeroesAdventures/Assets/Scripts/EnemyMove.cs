@@ -47,6 +47,10 @@ public class EnemyMove : MonoBehaviour
                 MoveRight = true;    
             }
         }
+        if (trig.tag == "Player" && PlayerPrefs.GetInt("LifeRecup", 0) == 0)
+        {
+            SceneManager.LoadScene(5);
+        }
     }
 
 }

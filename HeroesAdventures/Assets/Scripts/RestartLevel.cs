@@ -15,12 +15,13 @@ public class RestartLevel : MonoBehaviour
 
         if (other.tag == "Player" && PlayerPrefs.GetInt("LifeRecup", 0) == 0)
         {
-            SceneManager.LoadScene(5);
 
+            SceneManager.LoadScene(5);
         }
         else 
         {
-            SceneManager.LoadScene(SceneManager.GetSceneAt(0).name);
+            other.transform.position = new Vector3(-5,-3,0);
+            
         }
     
 

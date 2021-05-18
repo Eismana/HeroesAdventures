@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerScript : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class TimerScript : MonoBehaviour
             //executer le code du timer
             TimerExecute();
         }
+        PlayerPrefs.SetFloat("timer", time);
     }
 
     void TimerExecute()

@@ -1,45 +1,129 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="CameraFollow">
-    <Position X="8" Y="2.25" Width="1.5" />
+    <Position X="8.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAgAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\CameraFollow.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EnemyMove">
-    <Position X="4.75" Y="2" Width="1.5" />
+    <Position X="8.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAQAAAAAAAAAAAAAAAAAAAAAAEAAAQAAQAAAAAAAAAA=</HashCode>
+      <HashCode>BAQAAgAAACAAAAAAAAAAAAAAAEAAAQAAQAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\EnemyMove.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MainMenu">
-    <Position X="13.75" Y="3" Width="1.5" />
+    <Position X="14" Y="2.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAACAAAAgAAAAAAAAAAAAUAAAAgAAAAAAAAQA=</HashCode>
+      <HashCode>AAQAAAAAACAAAAgAAAAAAAAAAAAQAABAgAAAAAAAAQA=</HashCode>
       <FileName>Assets\Scripts\MainMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlayerCtrl">
-    <Position X="11.5" Y="1.5" Width="1.5" />
+    <Position X="10.25" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAUAAQBAAiAAAQCEAAAAAAAAAGAAAAAAASAgAAAAAAA=</HashCode>
+      <HashCode>AAUAAQBAAiAIAQCEAAAAAAgAAGAAAAAAAeAgAAAAAIA=</HashCode>
       <FileName>Assets\Scripts\PlayerCtrl.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RecupName">
-    <Position X="10.75" Y="7.25" Width="1.5" />
+    <Position X="10.25" Y="5.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
       <FileName>Assets\Scripts\RecupName.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RestartLevel">
-    <Position X="7" Y="6.25" Width="1.5" />
+    <Position X="8.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\RestartLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RowUi">
+    <Position X="12.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAQAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScoreMenu\RowUi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Score">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScoreMenu\Score.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScoreData">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScoreMenu\ScoreData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScoreManager">
+    <Position X="12.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAIAAQAAAAAAAAACAAAAAAAAAABAAAAAAAAAEg=</HashCode>
+      <FileName>Assets\Scripts\ScoreMenu\ScoreManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScoreUi">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\ScoreMenu\ScoreUi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimerScript">
+    <Position X="6.5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AARBEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUA=</HashCode>
+      <FileName>Assets\Scripts\TimerScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecupLife">
+    <Position X="8.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAgAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RecupLife.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RecupGold">
+    <Position X="6.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAIAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RecupGold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameOverMenu">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQAAAAAAAQA=</HashCode>
+      <FileName>Assets\Scripts\GameOverMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinishGame">
+    <Position X="14" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\FinishGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="changeLevel2">
+    <Position X="6.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\changeLevel2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChangeLevel">
+    <Position X="6.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ChangeLevel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -16,23 +16,27 @@ public class PlayerCtrl : MonoBehaviour
     public int gold = 0;
     public int life = 3;
     private float delay = 0f;
-    private float delayItems = 0f;
+    private float delayItemBonus = 0f;
+    private float delayItemMalus = 0f;
+    public Vector3 heroPos;
+    bool BonusJumpSpeed = false;
+    bool MalusSpeed = false;
     // Start est appelé au lancement du programme
     void Start()
     {
+        
         gold = PlayerPrefs.GetInt("GoldRecup", gold);
         life = PlayerPrefs.GetInt("LifeRecup", life);
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
-
     }
 
     // Update est appelé une fois par rafraichissment
     void Update()
     {
         delay += Time.deltaTime;
-        delayItems += Time.deltaTime;
+        delayItemBonus += Time.deltaTime;
+        delayItemMalus += Time.deltaTime;
         PlayerPrefs.SetInt("GoldRecup", gold);
         PlayerPrefs.SetInt("LifeRecup", life);
         PlayerPrefs.Save();
@@ -85,19 +89,29 @@ public class PlayerCtrl : MonoBehaviour
         {
             Destroy(other.gameObject);
             jumpSpeed += 150;
-            if (delayItems>30f)
-            {
-                delayItems = 0f;
+            BonusJumpSpeed = true;
+            delayItemBonus = 0f;
+        }
+        else if (delayItemBonus > 0.4f && BonusJumpSpeed==true)
+        {
                 jumpSpeed -= 150;
-            }
-            
-
+                BonusJumpSpeed = false;
+                delayItemBonus = 0f;
 
         }
         else if (other.tag == "MalusItem")
         {
             Destroy(other.gameObject);
             playerSpeed -= 2;
+            MalusSpeed = true;
+            delayItemMalus = 0f;
+
+        }
+        else if (delayItemMalus > 0.4f && MalusSpeed == true)
+        {
+            playerSpeed += 2;
+            MalusSpeed = false;
+            delayItemMalus = 0f;
 
         }
         else if (other.tag == "Gold")
@@ -118,7 +132,6 @@ public class PlayerCtrl : MonoBehaviour
             delay = 0f;
             life--;
             
-
         }
 
     }
