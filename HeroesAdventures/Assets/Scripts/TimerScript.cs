@@ -9,7 +9,6 @@ public class TimerScript : MonoBehaviour
     float time;
     public float TimerInterval = 5f;
     float tick;
-    // Start is called before the first frame update
     void Awake()
     {
         time = (int)Time.time;
@@ -25,14 +24,8 @@ public class TimerScript : MonoBehaviour
         if (time == tick)
         {
             tick = time + TimerInterval;
-            //executer le code du timer
-            TimerExecute();
         }
         PlayerPrefs.SetFloat("timer", time);
     }
 
-    void TimerExecute()
-    {
-        Debug.Log("Timer");
-    }
 }

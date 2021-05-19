@@ -18,7 +18,6 @@ public class PlayerCtrl : MonoBehaviour
     private float delay = 0f;
     private float delayItemBonus = 0f;
     private float delayItemMalus = 0f;
-    public Vector3 heroPos;
     bool BonusJumpSpeed = false;
     bool MalusSpeed = false;
     // Start est appelé au lancement du programme
@@ -57,7 +56,7 @@ public class PlayerCtrl : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
 
-        //Fonction qui permet de sauter si le bouton "Jump" = bare espace est appuyé et le bool isJumping est en false 
+        //Condition qui permet de sauter si le bouton "Jump" = bare espace est appuyé et le bool isJumping est en false 
         if (Input.GetButton("Jump") && !isJunmping)
         {
             rb.AddForce(new Vector2(rb.velocity.x, jumpSpeed));

@@ -14,7 +14,6 @@ public class RecupName : MonoBehaviour
         //Permet de récuperer l'input du nom dans le menu et l'afficher dans le text en haut à gauche du niveau 1 pour l'instant
         string affichageName = PlayerPrefs.GetString("PlayerName", "default");
         NomAv.text = affichageName;
-        Debug.Log(affichageName);
     }
 
 

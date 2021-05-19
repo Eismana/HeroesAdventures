@@ -10,7 +10,7 @@
   <Class Name="EnemyMove">
     <Position X="8.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAQAAgAAACAAAAAAAAAAAAAAAEAAAQAAQAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAgAAACAAAAAAAAAAAAAAAEAAAQAAQAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\EnemyMove.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -24,7 +24,7 @@
   <Class Name="PlayerCtrl">
     <Position X="10.25" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAUAAQBAAiAIAQCEAAAAAAgAAGAAAAAAAeAgAAAAAIA=</HashCode>
+      <HashCode>AAUAAQBAAiAIAQCEAAAAAAgAAGAAAAAAAeAgAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\PlayerCtrl.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -38,40 +38,40 @@
   <Class Name="RestartLevel">
     <Position X="8.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\RestartLevel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RowUi">
-    <Position X="12.25" Y="5" Width="1.5" />
+    <Position X="0.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAQAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\ScoreMenu\RowUi.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Score">
-    <Position X="4.75" Y="0.5" Width="1.5" />
+    <Position X="2" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\ScoreMenu\Score.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ScoreData">
-    <Position X="12.25" Y="0.5" Width="1.5" />
+    <Position X="1.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\ScoreMenu\ScoreData.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ScoreManager">
-    <Position X="12.25" Y="2.25" Width="1.5" />
+    <Position X="4.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAIAAQAAAAAAAAACAAAAAAAAAABAAAAAAAAAEg=</HashCode>
       <FileName>Assets\Scripts\ScoreMenu\ScoreManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ScoreUi">
-    <Position X="4.75" Y="4.25" Width="1.5" />
+    <Position X="2.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
       <FileName>Assets\Scripts\ScoreMenu\ScoreUi.cs</FileName>
@@ -80,26 +80,26 @@
   <Class Name="TimerScript">
     <Position X="6.5" Y="5.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AARBEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUA=</HashCode>
+      <HashCode>AARBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUA=</HashCode>
       <FileName>Assets\Scripts\TimerScript.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RecupLife">
     <Position X="8.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAACAAAAAAAAgAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAgAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\RecupLife.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RecupGold">
     <Position X="6.5" Y="3.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAIAAIAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAIAAIAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\RecupGold.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameOverMenu">
-    <Position X="4.75" Y="2.5" Width="1.5" />
+    <Position X="14.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQAAAAAAAQA=</HashCode>
       <FileName>Assets\Scripts\GameOverMenu.cs</FileName>

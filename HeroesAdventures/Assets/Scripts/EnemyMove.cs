@@ -9,7 +9,6 @@ public class EnemyMove : MonoBehaviour
     
     public float speed;
     public bool MoveRight;
-    int dammage;
     private AreaEffector2D bump;
 
     void Start()
