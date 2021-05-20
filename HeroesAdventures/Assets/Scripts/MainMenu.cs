@@ -1,3 +1,11 @@
+/* *****************
+ Programme : HerosAdventures
+ Auteur : Abel Eisman Camara
+ Projet : TPI 2021
+ Date : 03.05.2021 - 20.05.2021
+ Version : 1.0
+ Description : Jeu Unity 2D
+****************** */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,19 +18,14 @@ using UnityEngine.SceneManagement;
         public InputField namePlayer;
         public Text warning;
 
-        //Start est appelé au lancement du programme
+        //Start est appelé au lancement du programme et recupère les données des vies et des pièces
         private void Start()
         {
             warning.enabled = false;
             PlayerPrefs.SetInt("LifeRecup", 3);
             PlayerPrefs.SetInt("GoldRecup", 0);
-
         }
-        void Update()
-        {
-            
-        }
-    //La fonction Play() permet de rendre visble ou non le text de warning et d'accéder au premier niveau si l'utilisateur entre son nom
+        //La méthode Play() permet de rendre visble ou non le text de warning et d'accéder au premier niveau si l'utilisateur entre son nom
         public void Play()
         {
         if (namePlayer.text == "")
@@ -38,12 +41,12 @@ using UnityEngine.SceneManagement;
                 SceneManager.LoadScene("Niveau_1");
             }
         }
-        //La fonction Score() permet d'accéder à la scène score
+        //La méthode Score() permet d'accéder à la scène score
         public void Score()
         {
             SceneManager.LoadScene("Score");
         }
-        //La fonction Quit() permet de fermer l'application
+        //La méthode Quit() permet de fermer l'application
         public void Quit()
         {
             Application.Quit();
